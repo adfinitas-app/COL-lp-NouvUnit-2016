@@ -1,6 +1,6 @@
 var background = ['#b00076','#5bbab8','#edc60f'];
 var titleMission = ['Mission école pour nos super-héros !','Une super-chambre<br />pour des super-pouvoirs !','Des lieux de vie pour petits<br />et grands super-héros'];
-var subtitleMission = ['Même à l’hôpital, un super-héros doit pouvoir apprendre plein de choses comme à l’école ! Dans la nouvelle salle de classe, une enseignante spécialisée enseignera à tous les niveaux, pour que nos jeunes patients ne soient pas en rupture avec le système scolaire. ','Equipées pour les enfants à mobilité réduite, prévues pour accueillir un proche, les chambres individuelles seront le quartier général de chaque super-héros ! Ils pourront s’y reposer après les traitements, lire, rêver… pour reprendre des forces dans de bonnes conditions ! ','Enfants, bébés, adolescents : nos super-héros ont tous des besoins différents ! Pour favoriser leur épanouissement, notre nouvelle unité pédiatrique comprendra des espaces de vie et de loisirs adaptés à chaque âge et ouverts sur l’extérieur : biberonnerie et nursery pour les tout-petits, salon pour se retrouver autour d’activités ludiques et culturelles pour les plus grands.'];
+var subtitleMission = ['Même à l’hôpital, un super-héros doit continuer à apprendre plein de choses ! Dans la nouvelle salle de classe, grâce à des installations adaptées, une enseignante spécialisée enseignera à tous les niveaux, pour que nos jeunes patients ne perdent pas le lien avec l’école.','Adaptés pour les patients à mobilité réduite, prévues pour accueillir un proche, les chambres individuelles seront le quartier général de chaque super-héros ! Ils pourront s’y reposer après les traitements, lire, rêver… pour reprendre des forces dans les meilleures conditions ! ','Enfants, bébés, adolescents : nos super-héros ont tous des besoins différents ! Pour favoriser leur épanouissement, notre nouvelle unité pédiatrique, adolescents et jeunes adultes comprendra des espaces de vie et de loisirs adaptés à chaque âge et ouverts sur l’extérieur : biberonnerie et nurserie pour les tout-petits, espaces de loisirs pour se retrouver autour d’activités ludiques et culturelles pour les plus grands.'];
 var imgMission = ['https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-1.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-2.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-3.png'];
 
 $(document).ready ( function() {
@@ -45,6 +45,10 @@ $('.block-titre-slider').click( function() {
 	changeElementMission(index);
 });
 
+$('#btn-univers').click( function() {
+	scrollTo($('.slider-slide'));
+});
+
 function changeElementMission(index) {
 	removeCssOtherTitre(index);
 
@@ -72,7 +76,7 @@ function 	scrollTo(next){
 	if ($(next).length != 0)
 	{
 		$('html, body').stop().animate({
-			scrollTop: $(next).offset().top - 1
+			scrollTop: $(next).offset().top
 		}, 700, 'swing');
 		return false;
 	}
