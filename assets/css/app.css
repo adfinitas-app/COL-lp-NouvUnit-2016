@@ -295,6 +295,9 @@
 
 
 	@media screen and (max-width: 640px) {
+		.slide.un {
+			height: 300px;
+		}
 		.btn.header p {
 			font-size: 12px;
 		}

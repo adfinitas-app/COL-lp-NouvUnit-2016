@@ -30,7 +30,8 @@ $(document).ready ( function() {
 			var height = $('#img-header-2').height();
 
 		console.log(height);
-		$('.row.slide.un').css('height',height + 100);
+		if (height > 0)
+			$('.row.slide.un').css('height',height + 100);
 	}
 });
 
