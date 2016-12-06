@@ -36,6 +36,19 @@
 	#header div:nth-child(1) {
 		text-align: right;
 	}
+	#btn-univers {
+		display: none;
+	}
+	#img-header-2 {
+		display: none;
+	}
+	.img-header {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
 	.separator {
 		margin-left: 10px;
 	}
@@ -50,10 +63,10 @@
 	}
 
 	.slide.un {
+		height: 600px;
 		position: relative;
 		max-width: 100%;
 		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/fond-header.jpg');
-		min-height: 400px;
 		text-align: center;
 		margin-bottom: 5px;
 	}
@@ -282,6 +295,9 @@
 
 
 	@media screen and (max-width: 640px) {
+		.btn.header p {
+			font-size: 12px;
+		}
 		.block-footer p {
 			margin-top: 10px;
 		}
