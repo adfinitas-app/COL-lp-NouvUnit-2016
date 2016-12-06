@@ -82,7 +82,6 @@ function changeElementMission(index) {
 	$('.title').html(titleMission[index]);
 	$('.subtitle').html(subtitleMission[index]);
 	$('.btn.slide-slider').css({'background-color':background[index]});
-	scrollTo($('.block-display-slider'));
 }
 
 function removeCssOtherTitre(index) {

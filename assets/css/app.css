@@ -17,7 +17,9 @@
 	color: #0f0 !important;
 	outline: solid #f00 1px !important;
 	}*/
-
+	.bold {
+		font-weight: bold;
+	}
 	#header {
 		padding: 20px 20px;
 	}
@@ -118,11 +120,11 @@
 	.slide.deux h1 {
 		font-size: 25px;
 		font-family: 'Montserrat';
-		font-weight: 400;
+		font-weight: 700;
 	}
 	.slide.deux h2 {
-		font-family: 'Montserrat Extra Light';
-		font-weight: bold;
+		font-family: 'Montserrat Extra Light' !important;
+		font-weight: bold !important;
 	}
 	.btn.slide-deux {
 		margin-top: 40px;
@@ -133,6 +135,8 @@
 		font-weight: bold;
 	}
 	.slide.trois {
+		border-top: solid 1px #323531;
+		max-width: 100%;
 		text-align: center;
 	}
 	.slide.trois h1,
@@ -152,15 +156,14 @@
 		font-family: 'Montserrat';
 		font-weight: 400;
 	}
-	.block-picto > div {
-		margin-top: 20px;
+	.block-picto div {
+		margin-top: 30px;
 	}
 	.block-picto p,
 	.block-picto img {
 		display: inline-block;
 	}
 	.block-picto p {
-		margin-top: 35px;
 		font-size: 12px;
 		font-family: 'Montserrat Extra Light';
 	}
@@ -219,12 +222,13 @@
 	}
 	.subtitle {
 		font-family: 'Montserrat Extra Light';
-		font-size: 15px;
+		font-size: 17px;
 	}
 	.btn.slide-slider {
 		padding: 30px;
 		border-radius: 5px;
-		margin-top: 100px;
+		margin-top: 30px;
+		margin-bottom: 100px;
 		background-color: #b00076;
 		max-width: 300px;
 	}
@@ -235,6 +239,9 @@
 		text-align: center;
 		max-width: 100%;
 		background-color: #1d8782;
+	}
+	#img-mission {
+		max-width: 700px;
 	}
 	.block-text:nth-child(1) {
 		padding-right: 20px;
@@ -312,7 +319,7 @@
 			margin-top: 0;
 		}
 		#header div:nth-child(1) {
-			text-align: center;
+			@align: center;
 			margin-bottom: 10px;
 		}
 		#header {
