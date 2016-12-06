@@ -20,7 +20,7 @@ $(document).ready ( function() {
 			$('#btn-univers').fadeIn( "slow", function() {
 			});
 		});
-	}  , 1500 );
+	}  , 3500 );
 
 	adaptSizeSlideUn();
 	function adaptSizeSlideUn() {
