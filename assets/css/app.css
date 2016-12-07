@@ -384,6 +384,15 @@
 
 
 	@media screen and (max-width: 640px) {
+		.block-logo-header,
+		.block-text-header,
+		.block-don-sticky,
+		.block-logo-sticky {
+			text-align: center !important;
+		}
+		#header h1 {
+			font-size: 20px;
+		}
 		#img-mission {
 			max-width: 350px;
 		}

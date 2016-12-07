@@ -129,14 +129,10 @@ function preload(arrayOfImages) {
 }
 
 function adaptSizeSlideUn() {
-	if ($('#img-header-1').css('display') != 'none')
-		var height = $('#img-header-1').height();
-	else
-		var height = $('#img-header-2').height();
+	var x = $('#img-header-1').height();
+	var y = $('.row.slide.un').height()
 
-	console.log(height);
-	if (height > 0)
-		$('.row.slide.un').css('height',height + 100);
+	$('.row.slide.un').css('padding-top', (y / 2) - x);
 }
 
 function progressBar() {
