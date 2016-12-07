@@ -13,10 +13,10 @@ $(window).scroll(function() {
 	console.log(height);
 	console.log($('#header-sticky').css('display'));
 
-	if(height  > 105) {
+	if(height  > 85) {
 		$('#header-sticky').show();
 	}
-	if(height  < 105) {
+	if(height  < 85) {
 		if ($('#header-sticky').css('display') != 'none')
 			$('#header-sticky').css({'display':'none'})
 	}
