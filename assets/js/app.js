@@ -19,6 +19,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready ( function() {
+	$('img').on('dragstart', function(event) { event.preventDefault(); });
 
 	progressBar();
 
