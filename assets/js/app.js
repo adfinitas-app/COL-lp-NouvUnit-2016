@@ -79,11 +79,12 @@ $('.block-titre-slider').click( function() {
 	var index = $(this).index();
 	$(this).addClass('selected');
 	$(this).css({'background-color':background[index]});
-	console.log($(window).width());
 	if ($(window).width() > 1023) {
 		$(this).find(".arrow-selected").css({'display':'block'});
 	}
 	changeElementMission(index);
+	removeCssOtherTitre(index);
+	scrollToMission($('.block-display-slider'));
 });
 
 $('#btn-univers').click( function() {
@@ -91,14 +92,10 @@ $('#btn-univers').click( function() {
 });
 
 function changeElementMission(index) {
-	removeCssOtherTitre(index);
-
 	$('.block-display-slider > img').attr('src', imgMission[index]);
 	$('.title').html(titleMission[index]);
 	$('.subtitle').html(subtitleMission[index]);
 	$('.btn.slide-slider').css({'background-color':background[index]});
-	scrollToMission($('.block-display-slider'));
-
 }
 
 function removeCssOtherTitre(index) {
