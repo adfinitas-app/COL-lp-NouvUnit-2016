@@ -1,17 +1,17 @@
 
-html, body {
+/*html, body {
 	overflow: hidden;
 	height: 100%;
-}
+	}*/
 
-@font-face {
-	font-family: 'Montserrat Extra Light';
-	src: url('../fonts/montserrat-extralight-webfont.woff2') format('woff2'),
-	url('../fonts/montserrat-extralight-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+	@font-face {
+		font-family: 'Montserrat Extra Light';
+		src: url('../fonts/montserrat-extralight-webfont.woff2') format('woff2'),
+		url('../fonts/montserrat-extralight-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
 
-}
+	}
 
 
 /* {
