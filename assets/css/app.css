@@ -49,7 +49,7 @@
 	.container-sticky {
 		padding-top: 15px;
 		padding-bottom: 12px;
-		max-width: 100%;
+		max-width: 100% !important;
 		background-color: white;
 		width: 100%;
 		position: fixed;
@@ -140,6 +140,19 @@
 		color: white;
 		font-size: 20px;
 		line-height: 1.3;
+	}
+	#progressbar-header {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		bottom: 40px;
+	}
+	#progressbar-header .progress-meter {
+		width: 0%;
+		background-color: #c2008b;
 	}
 	.btn.header {
 		position: absolute;

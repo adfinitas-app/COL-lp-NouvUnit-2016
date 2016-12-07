@@ -10,8 +10,6 @@ $(window).resize( function() {
 
 $(window).scroll(function() {
 	var height = $(window).scrollTop();
-	console.log(height);
-	console.log($('#header-sticky').css('display'));
 
 	if(height  > 85) {
 		$('#header-sticky').show();
@@ -23,6 +21,9 @@ $(window).scroll(function() {
 });
 
 $(document).ready ( function() {
+
+	progressBar();
+
 	if($(window).scrollTop()  > 105) {
 		$('#header-sticky').show();
 	}
@@ -39,6 +40,8 @@ $(document).ready ( function() {
 			});
 			$('#btn-univers').fadeIn( "slow", function() {
 			});
+			$('#progressbar-header').css({'display':'none'})
+
 		});
 	}  , 3500 );
 
@@ -134,6 +137,21 @@ function adaptSizeSlideUn() {
 	console.log(height);
 	if (height > 0)
 		$('.row.slide.un').css('height',height + 100);
+}
+
+function progressBar() {
+	$('#progressbar-header .progress-meter').animate(
+		{width: '100%'},
+		4000);
+	var count = 0;
+	var counting = setInterval(function(){
+		if(count < 101) {
+			$('.progress-meter-text').text(count + '%');
+			count++
+		} else {
+			clearInterval(counting)
+		}
+	}, 40);
 }
 
 
