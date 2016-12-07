@@ -20,11 +20,57 @@
 	.bold {
 		font-weight: bold;
 	}
-	#header {
-		padding: 20px 20px;
+	#header{
+		display: none;
+		width: 100%;
+		max-width: 100%;
+		background-color: white;
+		position: absolute;
+		top: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		z-index: 9999;
+	}
+	#header > .row{
+		width: 100%;
+		max-width: 75rem !important;
+		background-color: white;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#header-sticky {
+		display: none;
+		max-width: 100%;
+		background-color: white;
+	}
+	.block-text-header {
+		text-align: left;
+	}
+	.container-sticky {
+		padding-top: 15px;
+		padding-bottom: 12px;
+		max-width: 100%;
+		background-color: white;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+	}
+	.container-sticky > .row {
+		max-width: 75rem !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.block-text-sticky {
+		text-align: left;
+		margin-left: 20px;
+	}
+	.block-logo-sticky .separator {
+		margin-left: 20px;
 	}
 
-	#header h1 {
+	#header h1,
+	#header-sticky h1 {
 		font-size: 26px;
 		line-height: 1.1;
 		text-transform: uppercase;
@@ -32,10 +78,12 @@
 		font-weight: 700;
 		color: #5bbab8;
 	}
-	#header h1 > span {
+	#header h1 > span,
+	#header-sticky h1 > span {
 		font-family: 'Montserrat Extra Light';
 	}
-	#header div:nth-child(1) {
+	#header div:nth-child(1),
+	#header-sticky div:nth-child(1) {
 		text-align: right;
 	}
 	#btn-univers {
@@ -65,7 +113,8 @@
 	}
 
 	.slide.un {
-		height: 600px;
+		min-height: 100vh;
+		padding-top: 100px;
 		position: relative;
 		max-width: 100%;
 		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/fond-header.jpg');
@@ -98,6 +147,16 @@
 		right: 10px;
 		bottom: 30px;
 		background-color: #c2008b;
+	}
+	.btn.header-sticky {
+		min-height: 60px;
+		border-radius: 5px;
+		background-color: #c2008b;
+	}
+	.btn.header-sticky p {
+		padding-top: 6px;
+		text-align: center;
+		font-family: 'Montserrat';
 	}
 	.btn.header p:nth-child(2){
 		font-family: 'Montserrat Extra Light';
@@ -167,7 +226,16 @@
 		font-size: 12px;
 		font-family: 'Montserrat Extra Light';
 	}
-	.block-picto span {
+	.block-picto a {
+		color: #323531;
+		font-size: 12px;
+		font-family: 'Montserrat Extra Light';
+		text-decoration: underline;
+	}
+	.block-picto a:hover {
+		text-decoration: none;
+	}
+	.block-picto strong {
 		font-family: 'Montserrat';
 	}
 	.btn:hover {
@@ -272,7 +340,8 @@
 		margin-right: 20px;
 		margin-left: 20px;
 	}
-	.block-footer p {
+	.block-footer p,
+	.block-footer a {
 		font-family: 'Montserrat Extra Light';
 		font-size: 15px;
 		color: white;
@@ -336,6 +405,9 @@
 	}
 
 	@media screen and (max-width: 1010px) {
+		.container-sticky > .row h1 {
+			text-align: center;
+		}
 		.separator {
 			display: none;
 		}
