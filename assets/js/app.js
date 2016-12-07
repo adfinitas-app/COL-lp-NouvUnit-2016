@@ -22,7 +22,7 @@ $(document).ready ( function() {
 
 	progressBar();
 
-	if($(window).scrollTop()  > 105) {
+	if($(window).scrollTop()  > 85) {
 		$('#header-sticky').show();
 	}
 
@@ -114,10 +114,17 @@ function removeCssOtherTitre(index) {
 }
 
 function 	scrollTo(next){
+	var height;
+
+	if($(window).width() < 700 )
+		height = 126
+	else
+		height = 93;
+	console.log(height);
 	if ($(next).length != 0)
 	{
 		$('html, body').stop().animate({
-			scrollTop: $(next).offset().top - 93
+			scrollTop: $(next).offset().top - height
 		}, 700, 'swing');
 		return false;
 	}
