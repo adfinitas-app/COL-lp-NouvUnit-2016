@@ -398,6 +398,9 @@ html, body {
 
 
 	@media screen and (max-width: 640px) {
+		.block-text-sticky {
+			margin-left: 0px;
+		}
 		.block-logo-header,
 		.block-text-header,
 		.block-don-sticky,
