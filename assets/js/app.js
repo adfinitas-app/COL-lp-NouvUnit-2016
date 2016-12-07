@@ -118,7 +118,6 @@ function 	scrollTo(next){
 		height = 126
 	else
 		height = 93;
-	console.log(height);
 	if ($(next).length != 0)
 	{
 		$('html, body').stop().animate({
