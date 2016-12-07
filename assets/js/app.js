@@ -37,6 +37,10 @@ $(document).ready ( function() {
 			$('#header').fadeIn( "slow", function() {
 			});
 			$('#btn-univers').fadeIn( "slow", function() {
+				$('html, body').css({
+					overflow: 'auto',
+					height: 'auto'
+				});
 			});
 			$('#progressbar-header').css({'display':'none'})
 
