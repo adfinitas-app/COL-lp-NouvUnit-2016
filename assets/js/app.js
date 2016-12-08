@@ -88,7 +88,7 @@ $('.block-titre-slider').click( function() {
 });
 
 $('#btn-univers').click( function() {
-	scrollTo($('.slider-slide'));
+	scrollTo($('.row.slide.deux'));
 });
 
 function changeElementMission(index) {
