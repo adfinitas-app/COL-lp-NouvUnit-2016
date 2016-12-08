@@ -192,7 +192,6 @@ html, body {
 	.slide.deux h1,
 	.slide.deux h2 {
 		margin-bottom: 0;
-		text-transform: uppercase;
 		color: white;
 		font-size: 20px;
 		line-height: 1.1;
