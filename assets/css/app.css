@@ -263,7 +263,7 @@ html, body {
 		transform: scale(1.03);
 	}
 	.slider-slide {
-		padding: 30px 30px;
+		padding: 4px 30px 30px 30px;
 	}
 	.block-titre-slider {
 		transition: all .1s ease-in-out;
@@ -274,17 +274,8 @@ html, body {
 		position: relative;
 		text-align: center;
 		padding-top: 15px;
-		background-color: #323531;
+		background-color: #9ca2a6;
 		min-height: 100px;
-	}
-	.block-titre-slider:nth-child(1):hover {
-		background-color: #b00076;
-	}
-	.block-titre-slider:nth-child(2):hover {
-		background-color: #5bbab8;
-	}
-	.block-titre-slider:nth-child(3):hover {
-		background-color: #edc60f;
 	}
 	.arrow-selected {
 		display: none;
