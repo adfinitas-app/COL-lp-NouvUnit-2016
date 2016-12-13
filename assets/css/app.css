@@ -329,10 +329,10 @@ html, body {
 		padding-left: 20px;
 	}
 	.block-text:nth-child(1) img {
-		margin-top: 20px;
 		float: right;
 	}
 	.block-text:nth-child(2) img {
+		margin-top: 7px;
 		float: left;
 	}
 
