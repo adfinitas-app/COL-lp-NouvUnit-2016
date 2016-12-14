@@ -4,6 +4,7 @@ var subtitleMission = ['Même à l’hôpital, un super-héros doit continuer à
 var imgMission = ['https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-1.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-2.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-3.png'];
 
 $(window).resize( function() {
+	changeImgTextUn();
 });
 
 $(window).scroll(function() {
@@ -19,6 +20,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready ( function() {
+	changeImgTextUn();
 	$('img').on('dragstart', function(event) { event.preventDefault(); });
 
 	progressBar();
@@ -141,6 +143,13 @@ function 	scrollToMission(next){
 		return false;
 	}
 };
+
+function changeImgTextUn() {
+	if($(window).width() < 1010)
+		$('#text-1').attr('src','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/text-1-small.png');
+	else
+		$('#text-1').attr('src','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/text-1.png');
+}
 
 function preload(arrayOfImages) {
 	$(arrayOfImages).each(function(){

@@ -318,6 +318,7 @@ html, body {
 		font-size: 20px;
 	}
 	.slide.quatre {
+		padding-top: 0;
 		text-align: center;
 		max-width: 100%;
 		background-color: #1d8782;
@@ -332,10 +333,11 @@ html, body {
 		padding-left: 20px;
 	}
 	.block-text:nth-child(1) img {
+		margin-top: 35px;
 		float: right;
 	}
 	.block-text:nth-child(2) img {
-		margin-top: 7px;
+		margin-top: 42px;
 		float: left;
 	}
 
@@ -440,6 +442,9 @@ html, body {
 	}
 
 	@media screen and (max-width: 1010px) {
+		.block-text img {
+			float: initial !important;
+		}
 		.block-text-sticky {
 			margin-left: 0;
 		}
