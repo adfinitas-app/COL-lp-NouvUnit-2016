@@ -2,7 +2,9 @@ var background = ['#b00076','#5bbab8','#edc60f'];
 var titleMission = ['Mission école pour nos super-héros','Une super-chambre<br />pour des super-pouvoirs','Des lieux de vie pour petits<br />et grands super-héros'];
 var subtitleMission = ['Même à l’hôpital, un super-héros doit continuer à apprendre plein de choses !<br />Dans la nouvelle salle de classe, grâce à des installations adaptées, une enseignante spécialisée enseignera à tous les niveaux, pour que nos jeunes patients ne perdent pas le lien avec l’école.','Adaptées pour les patients à mobilité réduite, prévues pour accueillir un proche, les chambres individuelles seront le quartier général de chaque super-héros !<br />Ils pourront s’y reposer après les traitements, lire, rêver… pour reprendre des forces dans les meilleures conditions.','Enfants, bébés, adolescents : nos super-héros ont tous des besoins différents !<br />Pour favoriser leur épanouissement, notre nouvelle unité pédiatrique, adolescents et jeunes adultes comprendra des espaces de vie et de loisirs adaptés à chaque âge et ouverts sur l’extérieur : biberonnerie et nurserie pour les tout-petits, espaces de loisirs pour se retrouver autour d’activités culturelles, ludiques et sportives pour les plus grands.'];
 var imgMission = ['https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-1.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-2.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-3.png'];
-var linkMission = ['https://centreoscarlambret.iraiser.eu/b?cid=21&UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-ECOLE&utm_campaign=NOUVELLEUNITE-COL','https://centreoscarlambret.iraiser.eu/b?cid=21&UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-QG&utm_campaign=NOUVELLEUNITE-COL','https://centreoscarlambret.iraiser.eu/b?cid=21&UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-LOISIRS&utm_campaign=NOUVELLEUNITE-COL']
+var linkMission = ['https://centreoscarlambret.iraiser.eu/b?cid=21&UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-ECOLE&utm_campaign=NOUVELLEUNITE-COL','https://centreoscarlambret.iraiser.eu/b?cid=21&UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-QG&utm_campaign=NOUVELLEUNITE-COL','https://centreoscarlambret.iraiser.eu/b?cid=21&UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-LOISIRS&utm_campaign=NOUVELLEUNITE-COL'];
+
+
 $(window).resize( function() {
 	changeImgTextUn();
 });
@@ -37,6 +39,7 @@ $(document).ready ( function() {
 		$('#img-header-1').fadeOut( 2000, function() {
 		});
 		$('#img-header-2').fadeIn( 2000, function() {
+			$('#img-header-2').css({'position':'relative'})
 			$('#header').fadeIn( "slow", function() {
 			});
 			$('#btn-univers').fadeIn( "slow", function() {
