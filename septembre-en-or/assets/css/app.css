@@ -168,6 +168,12 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	.arrow.small {
 		max-width: 25px;
 	}
+	a#anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
 	button.custom {
 		transition: all .2s ease-in-out;
 		-webkit-transition: all .2s ease-in-out;
