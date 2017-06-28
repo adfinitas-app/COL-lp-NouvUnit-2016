@@ -17,6 +17,9 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	.bold {
 		font-weight: bold;
 	}
+	.relative {
+		position: relative;
+	}
 	.flex {
 		display: flex;
 		align-items: center;
@@ -58,7 +61,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		width: 100%;
 		position: fixed;
 		top: 0;
-		z-index: 9999;
+		z-index: 9998;
 	}
 	.container-sticky > .row {
 		max-width: 75rem !important;
@@ -169,8 +172,8 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		max-width: 25px;
 	}
 	a#anchor {
-    top: -150px;
-}
+		top: -150px;
+	}
 	button.custom {
 		transition: all .2s ease-in-out;
 		-webkit-transition: all .2s ease-in-out;
@@ -189,6 +192,10 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		font-size: 19px;
 		width: 475px;
 		max-width: 100%;
+	}
+	button.custom.small {
+		margin-top: 30px;
+		width: 260px;
 	}
 	button.custom:hover {
 		transform: scale(1.03);
@@ -238,7 +245,6 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		padding-bottom: 5%;
 		max-width: 100%;
 		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/fond-header.jpg');
-		margin-top: 5px;
 	}
 	.slide.deux p {
 		margin-bottom: 20px;
@@ -248,6 +254,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	}
 
 	.slide.trois {
+		position: relative;
 		max-width: 100%;
 		text-align: center;
 		background-color: #d77071;
@@ -278,11 +285,41 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		cursor: pointer;
 		transform: scale(1.03);
 	}
+	.notification {
+		position: fixed;
+		width: 100%;
+		top: 91px;
+		left: 0;
+		padding: 10px;
+		text-align: center;
+		background-color: #e09ba3;
+		z-index: 9999;
+		max-width: 100% !important;
+		display: none;
+	}
+	.notification p {
+		margin-bottom: 0;
+		font-family: 'Open Sans';
+		color: white;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.error {
+		color: red !important;
+		font-size: 14px !important;
+		display: none;
+	}
+	form p.small {
+		font-size: 10px !important;
+	}
+	.intl-tel-input.allow-dropdown .selected-flag  {
+		width: 18px !important;
+	}
 
 	.input {
 		text-align: right;
 		margin: 0 auto;
-		width: 640px;
+		width: 626px;
 		max-width: 100%;
 	}
 	.input * {
