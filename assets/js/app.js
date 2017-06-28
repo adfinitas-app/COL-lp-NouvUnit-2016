@@ -48,6 +48,8 @@ $(document).ready ( function() {
 					height: 'auto'
 				});
 			});
+			$('.slide.zero').slideDown( 1000, function() {
+			});
 			$('#progressbar-header').css({'display':'none'})
 
 		});

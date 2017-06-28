@@ -19,6 +19,30 @@ html, body {
 	outline: solid #f00 1px !important;
 	}*/
 
+	button.custom {
+		margin-top: 20px;
+		transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 550px;
+		padding: 15px 50px;
+		background-color: #f0c618;
+		color: black;
+		font-weight: 500;
+		border-radius: 4px;
+		min-height: 68px;
+		font-size: 19px;
+		width: 475px;
+		max-width: 100%;
+	}
+	button.custom:hover {
+		transform: scale(1.03);
+	}
+
 	body {
 		width: 100%;
 	}
@@ -75,6 +99,30 @@ html, body {
 	}
 	.block-logo-sticky .separator {
 		margin-left: 20px;
+	}
+	.slide.zero {
+		display: none;
+		padding-top: 120px;
+		padding-right: 10px;
+		padding-left: 10px;
+		position: relative;
+		max-width: 100%;
+		background-color: #3c9697;
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	.slide.zero .header h1 {
+		font-family: 'Montserrat';
+		margin-top: 40px;
+		font-weight: 700;
+		color: #f0c618;
+		font-size: 42px;
+		line-height: 1.0;
+	}
+	.slide.zero .header h1 span {
+		font-weight: 100;
+		color: white;
+		font-size: 28px;
 	}
 
 	#header h1,
@@ -392,6 +440,9 @@ html, body {
 
 
 	@media screen and (max-width: 640px) {
+		.slide.zero {
+			padding-top: 170px;
+		}
 		.block-text-sticky {
 			margin-left: 0px;
 		}
