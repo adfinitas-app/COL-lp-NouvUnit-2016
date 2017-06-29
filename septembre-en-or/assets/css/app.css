@@ -179,9 +179,9 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	}
 	a.anchor:before {
         content:"";
-         display:block;
-          height:10px; /* fixed header height*/
-         margin:-100px 0 0; /* negative fixed header height */
+        display:block;
+        height:10px;
+        margin:-100px 0 0; 
     }
 	button.custom {
 		transition: all .2s ease-in-out;
