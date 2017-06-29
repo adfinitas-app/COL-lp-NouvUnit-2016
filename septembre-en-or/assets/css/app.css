@@ -180,8 +180,8 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	a.anchor:before {
         content:"";
         display:block;
-        height:110px;
-        margin:-110px 0 0; 
+        height:90px;
+        margin:-90px 0 0; 
     }
 	button.custom {
 		transition: all .2s ease-in-out;
