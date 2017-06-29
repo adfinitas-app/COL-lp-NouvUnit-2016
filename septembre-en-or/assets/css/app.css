@@ -177,6 +177,12 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	a.anchor {
 		padding-top: 150px;
 	}
+	a.anchor:before {
+  content:"";
+  display:block;
+  height:150px; /* fixed header height*/
+  margin:-150px 0 0; /* negative fixed header height */
+}
 	button.custom {
 		transition: all .2s ease-in-out;
 		-webkit-transition: all .2s ease-in-out;
