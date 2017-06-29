@@ -174,8 +174,8 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	.arrow.small {
 		max-width: 25px;
 	}
-	a#anchor {
-		top: -150px;
+	a.anchor {
+		padding-top: 150px;
 	}
 	button.custom {
 		transition: all .2s ease-in-out;
