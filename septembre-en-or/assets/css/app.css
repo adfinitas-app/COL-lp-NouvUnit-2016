@@ -174,13 +174,15 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	.arrow.small {
 		max-width: 25px;
 	}
-	a.anchor {
-		padding-top: 150px;
-	}
+	
+
 	a.anchor {
          padding-top: 90px;
-  margin-top: -90px;
-  display: inline-block; /* required for webkit browsers */
+        margin-top: -90px;
+        display: inline-block; /* required for webkit browsers */
+    }
+    a.anchor:before {
+         background-color: red;
     }
 	
 	button.custom {
