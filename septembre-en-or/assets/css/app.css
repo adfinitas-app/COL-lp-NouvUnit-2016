@@ -177,20 +177,12 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 	a.anchor {
 		padding-top: 150px;
 	}
-	a.anchor:before {
-        content:"";
-        display:block;
-        height:90px;
-        margin:-90px 0 0; 
+	a.anchor {
+         padding-top: 90px;
+  margin-top: -90px;
+  display: inline-block; /* required for webkit browsers */
     }
-	@-moz-document url-prefix() {
-        a.anchor:before {
-        content:"";
-        display:block;
-        height:0px;
-        margin:-0px 0 0; 
-        }
-    }
+	
 	button.custom {
 		transition: all .2s ease-in-out;
 		-webkit-transition: all .2s ease-in-out;
