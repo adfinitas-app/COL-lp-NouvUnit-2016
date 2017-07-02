@@ -330,7 +330,6 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		margin: 0 auto;
 		width: 626px;
 		max-width: 100%;
-		padding: 0.2rem;
 	}
 	.input * {
 		display: inline-block;
@@ -339,6 +338,7 @@ p, a, li, h1, h2, h3, h4, h5, h6 {
 		width: 400px;
 		max-width: 100%;
 		max-height: 25px;
+		padding: 0.2rem;
 	}
 	.slide.quatre {
 		padding-top: 0;
