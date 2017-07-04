@@ -89,7 +89,7 @@ $("#f_summit").click(function(e) {
 		$('.error email').hide();
 
 	if (document.getElementById('f_phone').value.length != 0 && !(filterPhone.test(document.getElementById('f_phone').value))
-		|| (document.getElementById('f_phone').value.length != 10)) {
+		|| (document.getElementById('f_phone').value.length != 10) &&  (document.getElementById('f_phone').value.length != 0)) {
 		$('.phone').show();
 	document.getElementById('f_phone').focus() ;
 	return false;
