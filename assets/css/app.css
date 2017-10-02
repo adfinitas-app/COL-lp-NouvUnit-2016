@@ -441,7 +441,7 @@ html, body {
 
 	@media screen and (max-width: 640px) {
 		.slide.zero {
-			padding-top: 170px;
+			padding-top: 0;
 		}
 		.block-text-sticky {
 			margin-left: 0px;
