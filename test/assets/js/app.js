@@ -57,6 +57,9 @@ $(document).ready ( function() {
 		});
 		$("#noel-2").fadeIn(3000, function() {
 		});
+		$("#to-hide").fadeIn(3000, function() {
+		});
+		$(".slide.un").css("padding-top", 50);
 	}, 5500);
 });
 

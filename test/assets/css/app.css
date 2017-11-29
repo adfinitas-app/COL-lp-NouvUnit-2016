@@ -609,6 +609,16 @@ html, body {
 		transform: scale(1.03);
 }
 
+#to-hide {
+	display: none;
+}
+
+#to-hide p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: #b00076;
+	font-size: 30px;
+}
+
 @media screen and (min-width: 1250px) {
 	#table-noel {
 		right: 15%;
