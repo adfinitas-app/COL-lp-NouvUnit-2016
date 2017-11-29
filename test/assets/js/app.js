@@ -59,7 +59,8 @@ $(document).ready ( function() {
 		});
 		$("#to-hide").fadeIn(3000, function() {
 		});
-		$(".slide.un").css("padding-top", 50);
+		$(".slide.un").css("padding-top", 30);
+		$("#to-hide").css("padding-bottom", 30);
 	}, 5500);
 });
 
