@@ -618,10 +618,36 @@ html, body {
 @media screen and (max-width: 40em) {
 	#Btn-Noel-header {
 	padding-left: 0px;
-}
-	#Btn-Noel-header {
 	position: relative;
 	bottom: 0;
+}
+}
+
+@media screen and (min-height: 900px) {
+	#noel p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+	font-size: 45px;
+}
+}
+
+@media screen and (min-height: 800px) {
+	#Btn-Noel-header {
+	bottom: 150px;
+}
+}
+
+@media screen and (min-height: 1100px) {
+	#Btn-Noel-header {
+	bottom: 150px;
+}
+	.top-pad {
+	padding-top: 400px;
+}
+	#noel p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+	font-size: 45px;
 }
 }
 
