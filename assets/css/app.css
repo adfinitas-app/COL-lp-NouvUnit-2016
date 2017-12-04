@@ -519,3 +519,145 @@ html, body {
 			width: 73%;
 		}
 	}
+
+.top-pad {
+	padding-top: 200px;
+}
+
+#neige {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+#banderole {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+#noel {
+	background-image: url(https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/Noel/bg-top.png);
+	background-size: cover;
+	background-position: top center;
+	display: none;
+	min-height: 100vh;
+	margin-top: 100px;
+}
+
+#noel-2 {
+	min-height: 100vh;
+	display: none;
+	background-color: #5BBAB8;
+}
+
+#noel p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+	font-size: 32px;
+}
+
+#classe {
+	padding: 15px;
+	font-size:25px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: #F47C5F;
+	background: white;
+	font-weight: 900;
+}
+
+#essentielle {
+	padding-top: 40px;
+	font-size:30px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+}
+
+.paragraphe {
+	font-size:20px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+}
+
+#Btn-Noel-header {
+	margin-top: 80px;
+	background: none;
+	padding-left: 100px;
+}
+
+#table-noel {
+	position:absolute;
+	top: 160px;
+	right: 2%;
+}
+
+#Don-Noel {
+	padding-top: 20px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	z-index: 200;
+	position: relative;
+}
+
+#Don-Noel:hover {
+		cursor: pointer;
+		transform: scale(1.03);
+}
+
+#to-hide {
+	display: none;
+}
+
+#to-hide p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: #b00076;
+	font-size: 30px;
+}
+
+@media screen and (min-width: 1250px) {
+	#table-noel {
+		right: 15%;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	#Btn-Noel-header {
+	padding-left: 0px;
+	position: relative;
+	bottom: 0;
+}
+}
+
+@media screen and (min-height: 900px) {
+	#noel p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+	font-size: 45px;
+}
+}
+
+@media screen and (min-height: 800px) {
+	#Btn-Noel-header {
+	bottom: 150px;
+}
+}
+
+@media screen and (min-height: 1100px) {
+	#Btn-Noel-header {
+	bottom: 150px;
+}
+	.top-pad {
+	padding-top: 400px;
+}
+	#noel p {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: white;
+	font-size: 45px;
+}
+}
+
