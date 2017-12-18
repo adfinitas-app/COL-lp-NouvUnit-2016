@@ -19,6 +19,14 @@ html, body {
 	outline: solid #f00 1px !important;
 	}*/
 
+.table{display:table;width:100%}
+.table-row{display:table-row}
+.table-cell{display:table-cell}
+.table-cell.top{vertical-align:top}
+.table-cell.bottom{vertical-align:bottom}
+.table-cell.middle{vertical-align:middle}
+
+
 	button.custom {
 		margin-top: 20px;
 		transition: all .2s ease-in-out;
@@ -213,9 +221,8 @@ html, body {
 	}
 	.btn.header {
 		position: absolute;
-		left: 10px;
 		right: 10px;
-		bottom: 30px;
+		bottom: 100px;
 		background-color: #c2008b;
 	}
 	.btn.header-sticky {
@@ -524,6 +531,12 @@ html, body {
 	padding-top: 200px;
 }
 
+@media screen and (min-width: 64em) { /* LARGE SCREEN */
+	.top-pad {
+		padding-top: 0px;
+	}
+}
+
 #neige {
 	position: absolute;
 	height: 100%;
@@ -543,14 +556,16 @@ html, body {
 	background-size: cover;
 	background-position: top center;
 	display: none;
-	min-height: 100vh;
 	margin-top: 100px;
+	position: relative;
 }
 
 #noel-2 {
 	min-height: 100vh;
 	display: none;
 	background-color: #5BBAB8;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/Noel/neige.png');
+	background-size: 100% 100%;
 }
 
 #noel p {
@@ -650,12 +665,32 @@ html, body {
 	#Btn-Noel-header {
 	bottom: 150px;
 }
-	.top-pad {
-	padding-top: 400px;
-}
+
 	#noel p {
 	font-family: 'Montserrat', Arial, sans-serif;
 	color: white;
 }
 }
 
+
+/* video yt size */
+@media screen and (max-width: 39.9375em) {
+	#player
+	{
+		height: 150px;
+	}
+}
+
+@media screen and (min-width: 40em and max-width: 63.9375em) {
+	#player
+	{
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	#player
+	{
+		height: 500px;
+	}
+}

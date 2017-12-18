@@ -105,6 +105,21 @@ $('#btn-univers').click( function() {
 	scrollTo($('.row.slide.deux'));
 });
 
+$('#btn-decouvre').click( function(e) {
+	var height;
+
+	e.preventDefault();
+	if($(window).width() > 700 )
+		height = 126
+	else
+		height = 260;
+
+	$('html, body').stop().animate({
+		scrollTop: $('#player').offset().top - $('header .container-sticky').height() - 60
+	}, 700, 'swing');
+	return false;
+});
+
 function changeElementMission(index) {
 	$('.block-display-slider > img').attr('src', imgMission[index]);
 	$('.title').html(titleMission[index]);
@@ -136,7 +151,7 @@ function 	scrollTo(next){
 	if ($(next).length != 0)
 	{
 		$('html, body').stop().animate({
-			scrollTop: $(next).offset().top - height
+			scrollTop: $(next).offset().top - $('header .container-sticky').height() - 27
 		}, 700, 'swing');
 		return false;
 	}
@@ -151,7 +166,7 @@ function 	scrollToMission(next){
 	if ($(next).length != 0)
 	{
 		$('html, body').stop().animate({
-			scrollTop: $(next).offset().top - (height)
+			scrollTop: $(next).offset().top - $('header .container-sticky').height() - 27
 		}, 700, 'swing');
 		return false;
 	}
@@ -185,5 +200,3 @@ function progressBar() {
 		}
 	}, 40);
 }
-
-
