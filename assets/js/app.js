@@ -2,7 +2,7 @@ var background = ['#b00076','#5bbab8','#edc60f'];
 var titleMission = ['Mission école pour nos super-héros','Une super-chambre<br />pour des super-pouvoirs','Des lieux de vie pour petits<br />et grands super-héros'];
 var subtitleMission = ['Même à l’hôpital, un super-héros doit continuer à apprendre plein de choses !<br />Dans la nouvelle salle de classe, grâce à des installations adaptées, une enseignante spécialisée enseignera à tous les niveaux, pour que nos jeunes patients ne perdent pas le lien avec l’école.','Adaptées pour les patients à mobilité réduite, prévues pour accueillir un proche, les chambres individuelles seront le quartier général de chaque super-héros !<br />Ils pourront s’y reposer après les traitements, lire, rêver… pour reprendre des forces dans les meilleures conditions.','Enfants, bébés, adolescents : nos super-héros ont tous des besoins différents !<br />Pour favoriser leur épanouissement, notre nouvelle unité pédiatrique, adolescents et jeunes adultes comprendra des espaces de vie et de loisirs adaptés à chaque âge et ouverts sur l’extérieur : biberonnerie et nurserie pour les tout-petits, espaces de loisirs pour se retrouver autour d’activités culturelles, ludiques et sportives pour les plus grands.'];
 var imgMission = ['https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-1.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-2.png','https://s3.amazonaws.com/heroku-adfinitas-campaign/COL-lp-NouvUnit-2016/mission-3.png'];
-var linkMission = ['https://centreoscarlambret.iraiser.eu/b/mon-don?UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-ECOLE&utm_campaign=FA2017','https://centreoscarlambret.iraiser.eu/b/mon-don?UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-QG&utm_campaign=FA2017','https://centreoscarlambret.iraiser.eu/b/mon-don?UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-LOISIRS&utm_campaign=FA2017'];
+var linkMission = ['https://centreoscarlambret.iraiser.eu/b/mon-don?UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-ECOLE','https://centreoscarlambret.iraiser.eu/b/mon-don?UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-QG','https://centreoscarlambret.iraiser.eu/b/mon-don?UTM_source=LPCOL_NOUVELLEUNITE&utm_content=CTA-DON-LOISIRS'];
 
 
 $(window).resize( function() {
@@ -52,16 +52,6 @@ $(document).ready ( function() {
 
 		});
 	}  , 3500 );
-	setTimeout( function(){
-		$("#noel").fadeIn(3000, function() {
-		});
-		$("#noel-2").fadeIn(3000, function() {
-		});
-		$("#to-hide").fadeIn(3000, function() {
-		});
-		$(".slide.un").css("padding-top", 30);
-		$("#to-hide").css("padding-bottom", 30);
-	}, 5500);
 });
 
 $('.block-titre-slider').first().hover( function() {
@@ -121,11 +111,25 @@ $('#btn-decouvre').click( function(e) {
 });
 
 function changeElementMission(index) {
-	$('.block-display-slider > img').attr('src', imgMission[index]);
-	$('.title').html(titleMission[index]);
-	$('.subtitle').html(subtitleMission[index]);
-	$('.btn.slide-slider').css({'background-color':background[index]});
-	$('#link-mission').attr('href',linkMission[index]);
+	if (index != 0) {
+        $('#noel-2').hide();
+        $('.block-display-slider > img').show().attr('src', imgMission[index]);
+        $('.title').show().html(titleMission[index]);
+        $('.action').show().html("Je passe à l'action !");
+        $('.subtitle').show().html(subtitleMission[index]);
+        $('.btn.slide-slider').show().css({'background-color':background[index]});
+        $('#link-mission').show().attr('href',linkMission[index]);
+	}
+	else {
+        $('.block-display-slider > img').hide();
+        $('.title').hide();
+        $('.subtitle').hide();
+        $('.btn.slide-slider').hide();
+        $('#link-mission').hide();
+		$('.action').hide();
+        $('#noel-2').show();
+	}
+
 }
 
 function removeCssOtherTitre(index) {
